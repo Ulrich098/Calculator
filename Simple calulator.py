@@ -7,7 +7,7 @@ from math import *
 
 def getvals(event):
     value = event.widget.cget('text')
-    if value=='Clr':
+    if value=='Clear':
         sc_variable.set('')
     elif value=='=':
         try:
@@ -40,8 +40,8 @@ def send_feedback():
         tmsg.showinfo('Feedback','We will contact you soon to know about your bad experience')
 
 root=Tk()
-canvas_width=750
-canvas_height=650
+canvas_width=555
+canvas_height=620
 root.geometry(f'{canvas_width}x{canvas_height}')
 root.maxsize(canvas_width,canvas_height)
 root.minsize(canvas_width,canvas_height)
